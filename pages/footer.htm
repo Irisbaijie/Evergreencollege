@@ -1,0 +1,159 @@
+
+<!-- //底部模板 -->
+<div class="centerContainer100 footer100">
+	<div class="centerContainer footer">
+	
+		Copyright © 2018 Evergreen College. All 
+rights reserved. | 67 Yonge Street, 4th Floor, Toronto,Ontario,M5E 1J8,Canada <br>
+        www.evergreencollege.com.cn | <a href="#franchise">Franchise Opportunities</a> | <a href="#privacy-statement">Privacy Policy</a>
+
+        <div class="fix30"></div>
+        
+        <a href="#" class="collapseBtn" id="toggleFooter">网站地图</a>
+    	
+        <div class="fix30"></div>
+        
+        
+        <div id="expandFooter">
+        <div class="showDesktop">
+            
+            
+            
+            <div class="footerCol">
+                <h1>Diploma Programs</h1>
+                            
+                                    <a href="#alberta_diploma_programs/?">Alberta Diploma/Certificate Programs</a><br>
+                                
+                                  
+                                
+            </div>
+            <div class="footerCol">
+                <h1>Why Evergreen</h1>
+                            
+                                    <a href="#about-evergreen-college/?">About Evergreen</a><br>
+                                
+                                
+                                
+                <br>
+                <h1>Retraining</h1>
+                            
+                                    <a href="#second-career/?">Second Career</a><br>
+                                
+            </div>
+            <div class="footerCol">
+                <h1>Admissions</h1>
+                <a href="#admissions">Admissions</a><br>
+                            
+                                    <a href="#admission-policies/?">Admissions Policies</a><br>
+                                
+                                
+                <br>
+               <h1>International Students</h1>
+                <a href="#international-students">International Students</a><br>
+                            
+                <br>
+                <h1>Reach Us</h1>
+                            
+                                    <a href="#contact-us/?">Contact Us</a><br>
+                                
+                                 
+    
+            </div>
+            <div class="footerCol last">
+                <a href="#brampton-campus"><h1>Toronto</h1>
+                67 Yonge Street, 4th Floor<br>
+                Toronto,Ontario,M5E 1J8,Canada<br>
+                +1 416 365 0505
+                <br><br>
+                </a>
+            </div>
+ 
+            <div class="mapleLeaf"></div>
+            
+            <div class="fix"></div>
+         </div>
+         </div>
+         
+         
+	</div>
+</div>
+	<script src="{dede:global.cfg_templets_skin/}/statics/js/bootstrap-carousel.js"></script>
+	<script type="text/javascript">//<![CDATA[ 
+		$(window).load(function(){
+		$(function()
+		  {
+			 			 
+			 $('a#toggleFooter').click(function() {
+				if ($('#expandFooter').css('display') === 'none') {
+					$('a#toggleFooter').html('Collapse sitemap');
+					$('#expandFooter').show();
+					var scrollY = $('body').scrollTop()?$('body').scrollTop():$('html').scrollTop();
+					$('html, body').animate({
+						scrollTop: scrollY + $('#expandFooter').outerHeight()
+					}, 'slow');
+				} else {
+					$('a#toggleFooter').html('Expand sitemap');
+					$('#expandFooter').slideUp('slow');
+				}
+				return false;
+			});
+			
+			$(function(){
+				$('#boxTestimonialQuote').children().wrapAll('<div class="wrapper"></div>');
+				var testimonialExpandedHeight = $('.wrapper').height();
+				var collapsedHeight = $('#boxTestimonialQuote').height();
+				//$('p').text(innerHeight);
+				$('button').on("click", function(){
+					if ($(this).hasClass("testimonialExpand")) {
+						$("#boxTestimonialQuote").animate({
+							height: testimonialExpandedHeight
+						}, 'slow', function(){
+							$('.testimonialExpand').toggleClass("testimonialExpand testimonialReset").html("READ LESS");
+						});   
+					}    
+				   else {
+					$('#boxTestimonialQuote').height(collapsedHeight); 
+					$(this).toggleClass("testimonialExpand testimonialReset").html("...&quot;</i>&nbsp; READ MORE");
+				   }            
+				});
+			});
+
+			    
+			$('#myCarousel').carousel()
+ 
+		  });
+		});//]]>
+	</script>
+
+<div class="fix">
+<!-- Google Code for Remarketing Tag -->
+<!--------------------------------------------------
+Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. See more information and instructions on how to setup the tag on: http://google.com/ads/remarketingsetup
+--------------------------------------------------->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 997986549;
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/statics/js/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<!--<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/997986549/?value=0&amp;guid=ON&amp;script=0"/>-->
+</div>
+</noscript>
+</div>
+
+<!-- google analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ 
+  ga('create', 'UA-65989610-1', 'auto');
+  ga('send', 'pageview');
+ 
+</script>

@@ -1,0 +1,91 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	Applied Environmental Technology
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="{dede:global.cfg_templets_skin/}/statics/css/bootstrapG.css" rel="stylesheet">
+<link href="{dede:global.cfg_templets_skin/}/statics/css/evergreen.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_templets_skin/}/statics/css/evergreen_form.css" rel="stylesheet" type="text/css"> 
+<script type='text/javascript' src="{dede:global.cfg_templets_skin/}/statics/js/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/statics/js/js.js"></script>
+<script async="" src="{dede:global.cfg_templets_skin/}/statics/js/analytics.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/statics/js/jquery-1.js"></script>
+</head>
+<body>
+
+<center>
+<!--head开始-->
+{dede:include filename="pages/head.htm"/}
+<!--index开始-->
+<div class="centerContainer100">
+	<div class="centerContainer">
+        <img src="{dede:global.cfg_templets_skin/}/statics/images/hero_contact.jpg" />
+        <div class="heroText">
+            
+        </div>
+	</div>
+</div>
+
+<div class="fix30">&nbsp;</div>	
+
+	<div class="centerContainer100">
+		<div class="centerContainer generic">
+		
+
+            <div class="col_1_of_3">
+
+                <div class="boxBlue">
+                 	<h1>新闻资讯</h1>
+                 	   <ul>
+						{dede:channel type='son' currentstyle="
+                        <li><a href='~typelink~' class='thisclass'>~typename~</a></li>
+                         "}
+                         <li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+                         {/dede:channel}
+
+                     </ul>
+
+                 </div>
+                 
+                 <br />
+ 
+                <div class="boxGreen">
+                    <h1>联系我们</h1>
+                     <a href="/brampton-campus" >Toronto</a><br />
+                    +1 416 365 0505
+                   
+               
+                 </div>
+ 
+                
+            </div>
+
+            <div class="col_2_of_3">
+              {dede:arclist  typeid='2' titlelen=42 row=6}
+            	<div class="tubi-middle">
+               
+                	<div class="middle-left">
+                    </div>
+                    
+                    <div class="middle-right">
+                    	<h3><a href='[field:arcurl/]'>[field:title/]</a></h3>
+                        <p>[field:description function='cn_substr(@me,200)'/]...</p>   
+                    </div>	
+                </div>
+               {/dede:arclist}
+            </div>
+            
+	</div>
+</div>
+
+
+
+<div class="fix30"></div>
+        <!--foot开始-->
+        {dede:include filename="pages/footer.htm"/}
+    </center>
+</body>
+</html>

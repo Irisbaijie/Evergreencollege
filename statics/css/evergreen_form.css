@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* LeadForm_up1 affects the containing div for the form. It is the same for both step 1 and 2. */
+form { color:#fff;}
+.contact form { color:#444;}
+#LeadForm_up1 { margin:0px; margin-top:-15px; padding:0px;}
+
+
+/* Form-containing table. This is where you add your background images. LeadForm_tLeadFormAuto is for Step 1, LeadForm_tLeadFormAuto1 is for Step 2. 
+   NOTE: Adding padding at the top to push the form down works in FF, but not IE. Need to modify the first table cell by giving it a height and valign bottom.*/
+
+#LeadForm_tLeadFormAuto {background-repeat:no-repeat; background-position:top right; width:185px; margin-left:-5px; float:left;}	
+#LeadForm_tLeadFormAuto1 {background-repeat:no-repeat; background-position:top right; width:185px; margin-left:-5px; float:left;}
+
+#LeadForm_td4 { display:none; visibility:hidden;}
+
+/* Affects the first table cell only. Useful if you need to move the form down to allow for background image to show.
+   LeadForm_firstCell is for Step 1, LeadForm_firstCell1 is for Step 2 */
+
+#LeadForm_firstCell {}
+#LeadForm_firstCell1 {}
+
+#LeadForm_campus {width:240px;}
+#LeadForm_program {width:240px;}
+#LeadForm_note {width:240px;}
+#LeadForm_salutation {width:240px;}
+#LeadForm_address{width:218px; font-family: Arial, Helvetica, sans-serif;	font-size:12px; font-weight:normal; color:#666; padding:10px; border:0px solid #dfdfdf; margin-bottom:8px; margin-left:7px;}
+#LeadForm_country{width:240px;}
+#LeadForm_state{width:240px;}
+#LeadForm_note {width:240px;}
+#LeadForm_cbTerms {font-size:12px; color:#CCC; margin-left:0px;}
+
+#LeadForm_firstname {width:240px;}
+#LeadForm_lastname {width:240px;}
+#LeadForm_email {width:240px;}
+#LeadForm_email1 {width:240px;}
+#LeadForm_zipcode {width:240px;}
+#LeadForm_city {width:240px;}
+#LeadForm_email_confirm {width:240px;}
+#LeadForm_tel1 {width:90px;}
+#LeadForm_tel2 {width:90px;}
+#LeadForm_tel {width:90px;}
+
+#LeadForm_SubmitLead { display:inline-block; height:28px; line-height:28px; padding:0px 10px 0px 10px; margin-top:20px; font-size:14px; text-transform:uppercase; background:url(images/submit_btn.png) repeat-x 0px 0px; background-color:#ececec; color:#0e143e; text-decoration:none; border:0px; border-radius:5px; float:left; clear:both; cursor:pointer;}
+#LeadForm_SubmitLead:hover { text-decoration:none; background:none; background-color:#ccc; color:#000;} 
+
+#LeadForm_tLeadFormButton {margin-left:0px; padding:0px; text-align:left; float:left;}
+
+.mainText tr { padding:0px; margin:0px;}
+
+
+.boldtext /* Stylizes the label outside the form field*/
+{	font-family: Arial, Helvetica, sans-serif;	font-size:12px; font-weight:normal; color:#fff;  margin-top:15px; 	}
+
+.selecttext 
+{	font-family: Arial, Helvetica, sans-serif;	font-size:12px; font-weight:normal; color:#666; border:0px solid #dfdfdf;  padding:5px	}
+
+.graytext 
+{ color:#FFF }
+
+
+.contactFormField  {font-family: Arial, Helvetica, sans-serif;	font-size:12px; font-weight:normal; color:#666; background-color:#ececec; padding:10px; border:0px solid #dfdfdf; margin-bottom:8px; width:240px; height:10px;}
+	.generic .contactFormField  {width:228px;}
+	.boxForm .contactFormField  {width:248px; margin-right:10px; background:url(images/form_bg.gif) repeat-x 0px 0px; background-color:#fff; border:1px solid #bfbfbf;}
+
+.contactFormFieldTel  {font-family: Arial, Helvetica, sans-serif;	font-size:12px; font-weight:normal; color:#666; background-color:#ececec; padding:10px; border:0px solid #dfdfdf; margin-bottom:7px}
+
+
+	
+.contactFormSelect  {font-family: Arial, Helvetica, sans-serif;	font-size:12px; font-weight:normal; color:#666; background-color:#ececec; border:0px solid #dfdfdf;	padding:5px;  margin-bottom:8px; width:240px; height:30px; clear:both; float:none;}
+	.generic .contactFormSelect  {width:224px;}
+	.boxForm .contactFormSelect  {width:268px; background:url(images/form_bg.gif) repeat-x 0px 0px; background-color:#fff; border:1px solid #bfbfbf;}
+	
+.contactFormBox /* Stylizes the "Type your question" box on the step 2 page */
+{font-family: Arial, Helvetica, sans-serif;	font-size:12px; font-weight:normal; color:#666; background:url(images/form_bg.gif) repeat-x 0px 0px; background-color:#fff; border:1px solid #bfbfbf;	padding:10px;  margin-bottom:8px; width:248px; height:100px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

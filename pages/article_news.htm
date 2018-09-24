@@ -1,0 +1,55 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1"><title>
+	Applied Environmental Technology
+</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="{dede:global.cfg_templets_skin/}/statics/css/bootstrapG.css" rel="stylesheet">
+<link href="{dede:global.cfg_templets_skin/}/statics/css/evergreen.css" rel="stylesheet" type="text/css">
+<link href="{dede:global.cfg_templets_skin/}/statics/css/evergreen_form.css" rel="stylesheet" type="text/css"> 
+<script type='text/javascript' src="{dede:global.cfg_templets_skin/}/statics/js/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/statics/js/js.js"></script>
+<script async="" src="{dede:global.cfg_templets_skin/}/statics/js/analytics.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/statics/js/jquery-1.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<center>
+<!--head开始-->
+{dede:include filename="pages/head.htm"/}
+<!--index开始-->
+<div class="place">
+ <div class="place_text"><strong>当前位置:</strong> {dede:field name='position'/} </div>
+</div>
+<div class="centerContainer100">
+	<div class="centerContainer_text">
+    	<div class="centerContainer_texttop">
+                    	<h3>{dede:field.title/}</h3>
+                          <div class="info">时间:{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}&emsp;作者:{dede:field.writer/}&emsp;点击:
+   <script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script>
+   次</div>
+                    </div>
+   
+  <div class="centerContainer_textbody">
+   <table width='100%'>
+    <tr>
+     <td>
+      {dede:field.body/}
+      {dede:field.vote/}
+     </td>
+    </tr>
+   </table>
+  </div>
+            
+	</div>
+</div>
+
+<div class="fix30"></div>
+        <!--foot开始-->
+        {dede:include filename="pages/footer.htm"/}
+    </center>
+</body>
+</html>
